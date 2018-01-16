@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEmojiViewController" customModule="EmojiDictionary" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="Zyt-7e-lC3"/>
+                <outlet property="txtFieldDescription" destination="Bzo-Cc-s61" id="7dM-0E-w0J"/>
+                <outlet property="txtFieldEmoji" destination="xZW-Zr-VIm" id="NNS-J3-Nxj"/>
+                <outlet property="txtFieldUsage" destination="ifS-ps-csw" id="sp7-KR-9DN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yf-ed-FPD">
+                    <rect key="frame" x="31" y="104" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzr-Wr-vxB">
+                    <rect key="frame" x="31" y="162" width="50" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im9-Ls-Vbe">
+                    <rect key="frame" x="31" y="228" width="88" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-Zr-VIm" customClass="LinkedTextField" customModule="EmojiDictionary" customModuleProvider="target">
+                    <rect key="frame" x="139" y="99" width="210" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="OhP-G5-z5b"/>
+                        <outlet property="nextField" destination="ifS-ps-csw" id="cGh-11-drL"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-ps-csw" customClass="LinkedTextField" customModule="EmojiDictionary" customModuleProvider="target">
+                    <rect key="frame" x="139" y="157" width="210" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3yi-Vb-uLa"/>
+                        <outlet property="nextField" destination="Bzo-Cc-s61" id="Lra-ho-OD5"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzo-Cc-s61" customClass="LinkedTextField" customModule="EmojiDictionary" customModuleProvider="target">
+                    <rect key="frame" x="139" y="223" width="210" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="UWs-80-J8h"/>
+                    </connections>
+                </textField>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-ub-3v5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Add Emoji" id="Xvf-GG-Lu1">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8Ka-Ru-2iI">
+                                <connections>
+                                    <action selector="cancel:" destination="-1" id="LOy-Fs-Mre"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="save" id="RMM-Og-mMx">
+                                <connections>
+                                    <action selector="save:" destination="-1" id="qqs-ib-NZh"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yzr-Wr-vxB" firstAttribute="top" secondItem="9yf-ed-FPD" secondAttribute="bottom" constant="37" id="4cK-v2-Q72"/>
+                <constraint firstItem="xZW-Zr-VIm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="79" id="BHr-00-bsK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ifS-ps-csw" secondAttribute="trailing" constant="26" id="KJU-pI-dwz"/>
+                <constraint firstItem="ifS-ps-csw" firstAttribute="leading" secondItem="Yzr-Wr-vxB" secondAttribute="trailing" constant="58" id="Kj2-RI-bTg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xZW-Zr-VIm" secondAttribute="trailing" constant="26" id="Kp2-17-pVk"/>
+                <constraint firstItem="Bzo-Cc-s61" firstAttribute="leading" secondItem="im9-Ls-Vbe" secondAttribute="trailing" constant="20" id="LKA-TL-Z6O"/>
+                <constraint firstItem="xZW-Zr-VIm" firstAttribute="leading" secondItem="9yf-ed-FPD" secondAttribute="trailing" constant="66" id="PST-UR-FsR"/>
+                <constraint firstItem="Bzo-Cc-s61" firstAttribute="top" secondItem="ifS-ps-csw" secondAttribute="bottom" constant="36" id="R02-d4-fa6"/>
+                <constraint firstItem="iqh-ub-3v5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SNb-hW-MMB"/>
+                <constraint firstItem="iqh-ub-3v5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xqh-5u-9Af"/>
+                <constraint firstItem="iqh-ub-3v5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="frh-Bh-tlu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bzo-Cc-s61" secondAttribute="trailing" constant="26" id="g3b-kj-nih"/>
+                <constraint firstItem="ifS-ps-csw" firstAttribute="top" secondItem="xZW-Zr-VIm" secondAttribute="bottom" constant="28" id="iPg-4B-KQQ"/>
+                <constraint firstItem="im9-Ls-Vbe" firstAttribute="top" secondItem="Yzr-Wr-vxB" secondAttribute="bottom" constant="45" id="jaV-am-1Mu"/>
+                <constraint firstItem="Yzr-Wr-vxB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="m8b-wf-9Mk"/>
+                <constraint firstItem="9yf-ed-FPD" firstAttribute="top" secondItem="iqh-ub-3v5" secondAttribute="bottom" constant="60" id="qPy-vj-XCD"/>
+                <constraint firstItem="9yf-ed-FPD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="vOq-Rd-deg"/>
+                <constraint firstItem="im9-Ls-Vbe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="zSV-EA-25O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.5" y="82.5"/>
+        </view>
+    </objects>
+</document>

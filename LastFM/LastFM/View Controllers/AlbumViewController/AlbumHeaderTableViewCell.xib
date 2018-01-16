@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="ofM-dY-1CM" customClass="AlbumHeaderTableViewCell" customModule="LastFM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofM-dY-1CM" id="d8a-c7-vzV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-5z-1YS">
+                        <rect key="frame" x="64" y="0.0" width="193" height="160.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lfx-5z-1YS" firstAttribute="top" secondItem="d8a-c7-vzV" secondAttribute="top" id="AMM-xq-Mdo"/>
+                    <constraint firstItem="lfx-5z-1YS" firstAttribute="leading" secondItem="d8a-c7-vzV" secondAttribute="leading" constant="64" id="PdZ-VN-ugI"/>
+                    <constraint firstAttribute="trailing" secondItem="lfx-5z-1YS" secondAttribute="trailing" constant="63" id="n69-lM-e0S"/>
+                    <constraint firstAttribute="bottom" secondItem="lfx-5z-1YS" secondAttribute="bottom" id="vIl-ks-blq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="lfx-5z-1YS" id="Yfv-uD-fXt"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="236.5"/>
+        </tableViewCell>
+    </objects>
+</document>

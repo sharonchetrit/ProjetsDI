@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>symbol</key>
+		<string>😀</string>
+		<key>usage</key>
+		<string>happiness</string>
+		<key>name</key>
+		<string>Grinning Face</string>
+		<key>emojiDescription</key>
+		<string>A typical smiley face.</string>
+	</dict>
+	<dict>
+		<key>symbol</key>
+		<string>😕</string>
+		<key>usage</key>
+		<string>unsure what to think; displeasure</string>
+		<key>name</key>
+		<string>Confused Face</string>
+		<key>emojiDescription</key>
+		<string>A confused, puzzled face.</string>
+	</dict>
+	<dict>
+		<key>symbol</key>
+		<string>😍</string>
+		<key>usage</key>
+		<string>love of something; attractive</string>
+		<key>name</key>
+		<string>Heart Eyes</string>
+		<key>emojiDescription</key>
+		<string>A smiley face with hearts for eyes.</string>
+	</dict>
+	<dict>
+		<key>symbol</key>
+		<string>👮</string>
+		<key>usage</key>
+		<string>person of authority</string>
+		<key>name</key>
+		<string>Police Officer</string>
+		<key>emojiDescription</key>
+		<string>A police officer wearing a blue cap with a gold badge. He is smiling, and eager to help.</string>
+	</dict>
+	<dict>
+		<key>symbol</key>
+		<string>🐢</string>
+		<key>usage</key>
+		<string>Something slow</string>
+		<key>name</key>
+		<string>Turtle</string>
+		<key>emojiDescription</key>
+		<string>A cute turtle.</string>
+	</dict>
+</array>
+</plist>

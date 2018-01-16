@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopArtistViewController" customModule="LastFM" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCountry" destination="cwO-lK-wAd" id="wkl-2X-veE"/>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="Lke-Xd-Rio"/>
+                <outlet property="tableView" destination="Clt-7W-lvG" id="SmA-G6-hAH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-Dl-tkf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Top Artists" id="Zu0-rZ-v8O">
+                            <barButtonItem key="rightBarButtonItem" title="🇮🇱" id="cwO-lK-wAd">
+                                <connections>
+                                    <action selector="selectTopArtist:" destination="-1" id="aMr-jN-gxM"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-7W-lvG">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GgW-h3-ChN"/>
+                        <outlet property="delegate" destination="-1" id="KeL-6e-n1N"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9zG-Dl-tkf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0hg-et-j24"/>
+                <constraint firstItem="9zG-Dl-tkf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7jp-I8-fPT"/>
+                <constraint firstItem="9zG-Dl-tkf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CQc-s0-Zwa"/>
+                <constraint firstItem="Clt-7W-lvG" firstAttribute="top" secondItem="9zG-Dl-tkf" secondAttribute="bottom" id="FMN-sD-bYt"/>
+                <constraint firstItem="Clt-7W-lvG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="coZ-Im-hqw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Clt-7W-lvG" secondAttribute="bottom" id="fRH-jD-3CU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Clt-7W-lvG" secondAttribute="trailing" id="xbg-DP-x9c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkedListViewController" customModule="CaseStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="Tcz-ET-XmX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+<<<<<<< HEAD
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wM-B0-kty">
+                    <rect key="frame" x="67" y="269" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-Lh-gNw" userLabel="field 1" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="318.5" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kig-gb-1ih"/>
+                        <outlet property="nextField" destination="DFS-uF-Ewg" id="M6q-GI-NF9"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-uF-Ewg" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="368.5" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="sHa-gp-coI"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-ee-0KC" userLabel="field 3" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="230" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CXr-Fk-cff"/>
+                        <outlet property="nextField" destination="m2T-c7-kOp" id="tzw-dr-ONI"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2T-c7-kOp" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="280" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5bY-2m-B9R"/>
+                        <outlet property="nextField" destination="eaN-Lh-gNw" id="sSD-9l-XIC"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-ut-wid" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="135" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zd4-8o-zWm"/>
+                        <outlet property="nextField" destination="ak4-0q-lxT" id="rGd-gY-dLH"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-0q-lxT" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="185" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4aR-xq-6WL"/>
+                        <outlet property="nextField" destination="qSn-ee-0KC" id="dOg-rx-lCT"/>
+                    </connections>
+                </textField>
+=======
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="7yf-4e-sQB">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-Yf-KKB" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="e5q-XE-nNk"/>
+                                <outlet property="nextField" destination="Hxg-mu-HHW" id="pG4-Ok-gZz"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-mu-HHW" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="37.5" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="weo-zi-zRP"/>
+                                <outlet property="nextField" destination="j4y-6C-vBU" id="uSC-zq-hcb"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4y-6C-vBU" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="74.5" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="s1Y-hG-FK8"/>
+                                <outlet property="nextField" destination="lwC-ZB-Jio" id="ExR-AM-K4y"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwC-ZB-Jio" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="112" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="gWu-LP-aJ6"/>
+                                <outlet property="nextField" destination="eGG-Ja-klX" id="k77-Rf-cWG"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGG-Ja-klX" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="149.5" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="yiR-BM-TA5"/>
+                                <outlet property="nextField" destination="ak4-0q-lxT" id="sG8-CX-nPi"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-0q-lxT" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="186.5" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="4aR-xq-6WL"/>
+                                <outlet property="nextField" destination="rqd-ut-wid" id="Ltw-Ir-yNm"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-ut-wid" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="224" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="zd4-8o-zWm"/>
+                                <outlet property="nextField" destination="fGv-ik-WIn" id="T0p-Nv-Gic"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGv-ik-WIn" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="261" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="LCj-uz-qrX"/>
+                                <outlet property="nextField" destination="hLG-be-7ho" id="3P2-LL-3RW"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLG-be-7ho" userLabel="field 3" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="298.5" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="8wo-aU-Qa5"/>
+                                <outlet property="nextField" destination="5sV-bp-R70" id="snf-8n-bjl"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sV-bp-R70" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="336" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="uKV-wX-jaE"/>
+                                <outlet property="nextField" destination="eaN-Lh-gNw" id="VfO-fZ-Q0M"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-Lh-gNw" userLabel="field 1" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="373" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="kig-gb-1ih"/>
+                                <outlet property="nextField" destination="DFS-uF-Ewg" id="6Eh-2W-HuL"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-uF-Ewg" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="410.5" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="sHa-gp-coI"/>
+                                <outlet property="nextField" destination="MNl-1Z-sGl" id="CDo-IH-Oqg"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNl-1Z-sGl" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="448" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="XSU-Na-ctx"/>
+                                <outlet property="nextField" destination="qSn-ee-0KC" id="sv4-W1-C7x"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-ee-0KC" userLabel="field 3" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="485" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="CXr-Fk-cff"/>
+                                <outlet property="nextField" destination="m2T-c7-kOp" id="5ad-oB-3nr"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2T-c7-kOp" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="522.5" width="375" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="5bY-2m-B9R"/>
+                                <outlet property="nextField" destination="y5J-16-wQh" id="2jL-Jf-yeG"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5J-16-wQh" userLabel="field 1" customClass="LinkedTextField" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="559.5" width="375" height="37.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="kQe-PD-1hy"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DjP-Yf-KKB" firstAttribute="leading" secondItem="7yf-4e-sQB" secondAttribute="leading" id="IRk-OS-0mA"/>
+                        <constraint firstAttribute="trailing" secondItem="DjP-Yf-KKB" secondAttribute="trailing" id="LHg-gO-7Uq"/>
+                        <constraint firstItem="DjP-Yf-KKB" firstAttribute="top" secondItem="7yf-4e-sQB" secondAttribute="top" id="agW-cm-KIj"/>
+                    </constraints>
+                </stackView>
+>>>>>>> d354426766d94603be9baacfdacc2e2fec2adf74
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-OV-jio">
+                    <rect key="frame" x="32" y="20" width="30" height="30"/>
+                    <state key="normal" title="X"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="sgr-Wu-l5m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.9502104846740409" green="1" blue="0.39088498567635865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nF0-OV-jio" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Puo-Su-rmz"/>
+                <constraint firstItem="nF0-OV-jio" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R2y-ew-WMj"/>
+                <constraint firstItem="7yf-4e-sQB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eDd-iV-vRJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7yf-4e-sQB" secondAttribute="trailing" id="haw-Jz-HCh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7yf-4e-sQB" secondAttribute="bottom" id="lK6-FM-UiQ"/>
+                <constraint firstItem="7yf-4e-sQB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="xtL-OP-P8V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="155.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumViewController" customModule="LastFM" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="x0O-fy-bVl" id="cCS-dz-SWd"/>
+                <outlet property="navBar" destination="MbL-jf-LlQ" id="1C2-91-Bgz"/>
+                <outlet property="tableView" destination="QDd-d0-WmU" id="Vlf-GU-ItV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="x0O-fy-bVl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-jf-LlQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Top Artists" id="Lap-ua-zry">
+                            <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="AYP-Xf-ev0">
+                                <connections>
+                                    <action selector="back" destination="-1" id="f1b-mK-2El"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-d0-WmU">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bU3-vn-63K"/>
+                        <outlet property="delegate" destination="-1" id="DwO-1X-Ldl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MbL-jf-LlQ" firstAttribute="trailing" secondItem="m98-yr-0Tw" secondAttribute="trailing" id="0u1-iU-5r7"/>
+                <constraint firstItem="QDd-d0-WmU" firstAttribute="leading" secondItem="m98-yr-0Tw" secondAttribute="leading" id="4pY-JL-p5Y"/>
+                <constraint firstItem="m98-yr-0Tw" firstAttribute="bottom" secondItem="QDd-d0-WmU" secondAttribute="bottom" id="88C-dy-Upf"/>
+                <constraint firstItem="MbL-jf-LlQ" firstAttribute="top" secondItem="x0O-fy-bVl" secondAttribute="top" id="A6j-d9-fCO"/>
+                <constraint firstItem="QDd-d0-WmU" firstAttribute="top" secondItem="MbL-jf-LlQ" secondAttribute="bottom" id="ThY-GY-Uqy"/>
+                <constraint firstItem="m98-yr-0Tw" firstAttribute="trailing" secondItem="QDd-d0-WmU" secondAttribute="trailing" id="jlj-C3-Dwg"/>
+                <constraint firstItem="MbL-jf-LlQ" firstAttribute="leading" secondItem="m98-yr-0Tw" secondAttribute="leading" id="tAT-Zl-bmk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="m98-yr-0Tw"/>
+        </view>
+    </objects>
+</document>

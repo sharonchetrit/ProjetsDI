@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9B1E741EBD34F568589493 /* Pods_LastFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C103C8E95D5752EDC798C6B /* Pods_LastFM.framework */; };
+		3213436D1FFA6CC100C69EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213436C1FFA6CC100C69EA2 /* AppDelegate.swift */; };
+		321343721FFA6CC100C69EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321343701FFA6CC100C69EA2 /* Main.storyboard */; };
+		321343741FFA6CC100C69EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321343731FFA6CC100C69EA2 /* Assets.xcassets */; };
+		321343771FFA6CC100C69EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321343751FFA6CC100C69EA2 /* LaunchScreen.storyboard */; };
+		3213437F1FFA6CFF00C69EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213437E1FFA6CFF00C69EA2 /* BaseViewController.swift */; };
+		321343821FFA710900C69EA2 /* TopArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343801FFA710900C69EA2 /* TopArtistViewController.swift */; };
+		321343831FFA710900C69EA2 /* TopArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321343811FFA710900C69EA2 /* TopArtistViewController.xib */; };
+		321343871FFA714800C69EA2 /* TopArtistAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343851FFA714800C69EA2 /* TopArtistAlbumViewController.swift */; };
+		321343881FFA714800C69EA2 /* TopArtistAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321343861FFA714800C69EA2 /* TopArtistAlbumViewController.xib */; };
+		3213438B1FFA721A00C69EA2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343891FFA721A00C69EA2 /* AlbumViewController.swift */; };
+		3213438C1FFA721A00C69EA2 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3213438A1FFA721A00C69EA2 /* AlbumViewController.xib */; };
+		321343921FFA733A00C69EA2 /* TopArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343901FFA733A00C69EA2 /* TopArtistTableViewCell.swift */; };
+		321343931FFA733A00C69EA2 /* TopArtistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321343911FFA733A00C69EA2 /* TopArtistTableViewCell.xib */; };
+		321343961FFA736C00C69EA2 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343941FFA736C00C69EA2 /* AlbumCollectionViewCell.swift */; };
+		321343971FFA736C00C69EA2 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321343951FFA736C00C69EA2 /* AlbumCollectionViewCell.xib */; };
+		3213439A1FFA739E00C69EA2 /* AlbumHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343981FFA739E00C69EA2 /* AlbumHeaderTableViewCell.swift */; };
+		3213439B1FFA739E00C69EA2 /* AlbumHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321343991FFA739E00C69EA2 /* AlbumHeaderTableViewCell.xib */; };
+		3213439E1FFA73D000C69EA2 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213439D1FFA73D000C69EA2 /* Artist.swift */; };
+		321343A01FFA73E500C69EA2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213439F1FFA73E500C69EA2 /* Album.swift */; };
+		321343A21FFA73FF00C69EA2 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343A11FFA73FF00C69EA2 /* Tag.swift */; };
+		321343A41FFA741900C69EA2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343A31FFA741900C69EA2 /* Track.swift */; };
+		321343A61FFA7F2B00C69EA2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343A51FFA7F2B00C69EA2 /* Country.swift */; };
+		321343A81FFA845800C69EA2 /* LastFMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321343A71FFA845800C69EA2 /* LastFMNetwork.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13A8007FAA93244348CBE848 /* Pods-LastFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LastFM/Pods-LastFM.debug.xcconfig"; sourceTree = "<group>"; };
+		321343691FFA6CC100C69EA2 /* LastFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3213436C1FFA6CC100C69EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		321343711FFA6CC100C69EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		321343731FFA6CC100C69EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		321343761FFA6CC100C69EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		321343781FFA6CC100C69EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3213437E1FFA6CFF00C69EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		321343801FFA710900C69EA2 /* TopArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistViewController.swift; sourceTree = "<group>"; };
+		321343811FFA710900C69EA2 /* TopArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopArtistViewController.xib; sourceTree = "<group>"; };
+		321343851FFA714800C69EA2 /* TopArtistAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistAlbumViewController.swift; sourceTree = "<group>"; };
+		321343861FFA714800C69EA2 /* TopArtistAlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopArtistAlbumViewController.xib; sourceTree = "<group>"; };
+		321343891FFA721A00C69EA2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		3213438A1FFA721A00C69EA2 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		321343901FFA733A00C69EA2 /* TopArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistTableViewCell.swift; sourceTree = "<group>"; };
+		321343911FFA733A00C69EA2 /* TopArtistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopArtistTableViewCell.xib; sourceTree = "<group>"; };
+		321343941FFA736C00C69EA2 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		321343951FFA736C00C69EA2 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		321343981FFA739E00C69EA2 /* AlbumHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		321343991FFA739E00C69EA2 /* AlbumHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		3213439D1FFA73D000C69EA2 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		3213439F1FFA73E500C69EA2 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		321343A11FFA73FF00C69EA2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		321343A31FFA741900C69EA2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		321343A51FFA7F2B00C69EA2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		321343A71FFA845800C69EA2 /* LastFMNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFMNetwork.swift; sourceTree = "<group>"; };
+		5AF2FBA86A488FB971A90039 /* Pods-LastFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-LastFM/Pods-LastFM.release.xcconfig"; sourceTree = "<group>"; };
+		5C103C8E95D5752EDC798C6B /* Pods_LastFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LastFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		321343661FFA6CC100C69EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9B1E741EBD34F568589493 /* Pods_LastFM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321343601FFA6CC100C69EA2 = {
+			isa = PBXGroup;
+			children = (
+				3213436B1FFA6CC100C69EA2 /* LastFM */,
+				3213436A1FFA6CC100C69EA2 /* Products */,
+				82B6F00FFD0162ADF19888B7 /* Pods */,
+				8AFC77C34ADB96E3F48535A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3213436A1FFA6CC100C69EA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				321343691FFA6CC100C69EA2 /* LastFM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3213436B1FFA6CC100C69EA2 /* LastFM */ = {
+			isa = PBXGroup;
+			children = (
+				3213436C1FFA6CC100C69EA2 /* AppDelegate.swift */,
+				3213439C1FFA73B500C69EA2 /* Model */,
+				321343841FFA712200C69EA2 /* View Controllers */,
+				321343701FFA6CC100C69EA2 /* Main.storyboard */,
+				321343731FFA6CC100C69EA2 /* Assets.xcassets */,
+				321343751FFA6CC100C69EA2 /* LaunchScreen.storyboard */,
+				321343781FFA6CC100C69EA2 /* Info.plist */,
+			);
+			path = LastFM;
+			sourceTree = "<group>";
+		};
+		321343841FFA712200C69EA2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3213437E1FFA6CFF00C69EA2 /* BaseViewController.swift */,
+				3213438D1FFA723800C69EA2 /* TopArtistViewController */,
+				3213438E1FFA724500C69EA2 /* TopArtistAlbumViewController */,
+				3213438F1FFA725100C69EA2 /* AlbumViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3213438D1FFA723800C69EA2 /* TopArtistViewController */ = {
+			isa = PBXGroup;
+			children = (
+				321343801FFA710900C69EA2 /* TopArtistViewController.swift */,
+				321343811FFA710900C69EA2 /* TopArtistViewController.xib */,
+				321343901FFA733A00C69EA2 /* TopArtistTableViewCell.swift */,
+				321343911FFA733A00C69EA2 /* TopArtistTableViewCell.xib */,
+			);
+			path = TopArtistViewController;
+			sourceTree = "<group>";
+		};
+		3213438E1FFA724500C69EA2 /* TopArtistAlbumViewController */ = {
+			isa = PBXGroup;
+			children = (
+				321343851FFA714800C69EA2 /* TopArtistAlbumViewController.swift */,
+				321343861FFA714800C69EA2 /* TopArtistAlbumViewController.xib */,
+				321343941FFA736C00C69EA2 /* AlbumCollectionViewCell.swift */,
+				321343951FFA736C00C69EA2 /* AlbumCollectionViewCell.xib */,
+			);
+			path = TopArtistAlbumViewController;
+			sourceTree = "<group>";
+		};
+		3213438F1FFA725100C69EA2 /* AlbumViewController */ = {
+			isa = PBXGroup;
+			children = (
+				321343891FFA721A00C69EA2 /* AlbumViewController.swift */,
+				3213438A1FFA721A00C69EA2 /* AlbumViewController.xib */,
+				321343981FFA739E00C69EA2 /* AlbumHeaderTableViewCell.swift */,
+				321343991FFA739E00C69EA2 /* AlbumHeaderTableViewCell.xib */,
+			);
+			path = AlbumViewController;
+			sourceTree = "<group>";
+		};
+		3213439C1FFA73B500C69EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3213439D1FFA73D000C69EA2 /* Artist.swift */,
+				3213439F1FFA73E500C69EA2 /* Album.swift */,
+				321343A11FFA73FF00C69EA2 /* Tag.swift */,
+				321343A31FFA741900C69EA2 /* Track.swift */,
+				321343A51FFA7F2B00C69EA2 /* Country.swift */,
+				321343A71FFA845800C69EA2 /* LastFMNetwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82B6F00FFD0162ADF19888B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A8007FAA93244348CBE848 /* Pods-LastFM.debug.xcconfig */,
+				5AF2FBA86A488FB971A90039 /* Pods-LastFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AFC77C34ADB96E3F48535A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C103C8E95D5752EDC798C6B /* Pods_LastFM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		321343681FFA6CC100C69EA2 /* LastFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3213437B1FFA6CC100C69EA2 /* Build configuration list for PBXNativeTarget "LastFM" */;
+			buildPhases = (
+				CC2A55422042AF465BA88D5C /* [CP] Check Pods Manifest.lock */,
+				321343651FFA6CC100C69EA2 /* Sources */,
+				321343661FFA6CC100C69EA2 /* Frameworks */,
+				321343671FFA6CC100C69EA2 /* Resources */,
+				56F3C9DE2142498605D3FF13 /* [CP] Embed Pods Frameworks */,
+				CBB3970FB71FC2CAE0818E4A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LastFM;
+			productName = LastFM;
+			productReference = 321343691FFA6CC100C69EA2 /* LastFM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		321343611FFA6CC100C69EA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Developer Institute";
+				TargetAttributes = {
+					321343681FFA6CC100C69EA2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 321343641FFA6CC100C69EA2 /* Build configuration list for PBXProject "LastFM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 321343601FFA6CC100C69EA2;
+			productRefGroup = 3213436A1FFA6CC100C69EA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				321343681FFA6CC100C69EA2 /* LastFM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		321343671FFA6CC100C69EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3213438C1FFA721A00C69EA2 /* AlbumViewController.xib in Resources */,
+				321343771FFA6CC100C69EA2 /* LaunchScreen.storyboard in Resources */,
+				321343881FFA714800C69EA2 /* TopArtistAlbumViewController.xib in Resources */,
+				321343831FFA710900C69EA2 /* TopArtistViewController.xib in Resources */,
+				321343971FFA736C00C69EA2 /* AlbumCollectionViewCell.xib in Resources */,
+				321343931FFA733A00C69EA2 /* TopArtistTableViewCell.xib in Resources */,
+				321343741FFA6CC100C69EA2 /* Assets.xcassets in Resources */,
+				321343721FFA6CC100C69EA2 /* Main.storyboard in Resources */,
+				3213439B1FFA739E00C69EA2 /* AlbumHeaderTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56F3C9DE2142498605D3FF13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFM/Pods-LastFM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB3970FB71FC2CAE0818E4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFM/Pods-LastFM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2A55422042AF465BA88D5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		321343651FFA6CC100C69EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321343821FFA710900C69EA2 /* TopArtistViewController.swift in Sources */,
+				3213438B1FFA721A00C69EA2 /* AlbumViewController.swift in Sources */,
+				3213436D1FFA6CC100C69EA2 /* AppDelegate.swift in Sources */,
+				3213439E1FFA73D000C69EA2 /* Artist.swift in Sources */,
+				321343A61FFA7F2B00C69EA2 /* Country.swift in Sources */,
+				3213437F1FFA6CFF00C69EA2 /* BaseViewController.swift in Sources */,
+				321343921FFA733A00C69EA2 /* TopArtistTableViewCell.swift in Sources */,
+				321343A21FFA73FF00C69EA2 /* Tag.swift in Sources */,
+				321343871FFA714800C69EA2 /* TopArtistAlbumViewController.swift in Sources */,
+				321343A81FFA845800C69EA2 /* LastFMNetwork.swift in Sources */,
+				3213439A1FFA739E00C69EA2 /* AlbumHeaderTableViewCell.swift in Sources */,
+				321343961FFA736C00C69EA2 /* AlbumCollectionViewCell.swift in Sources */,
+				321343A01FFA73E500C69EA2 /* Album.swift in Sources */,
+				321343A41FFA741900C69EA2 /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		321343701FFA6CC100C69EA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				321343711FFA6CC100C69EA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		321343751FFA6CC100C69EA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				321343761FFA6CC100C69EA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		321343791FFA6CC100C69EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3213437A1FFA6CC100C69EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3213437C1FFA6CC100C69EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A8007FAA93244348CBE848 /* Pods-LastFM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWZ4W5JN87;
+				INFOPLIST_FILE = LastFM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.LastFM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3213437D1FFA6CC100C69EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF2FBA86A488FB971A90039 /* Pods-LastFM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWZ4W5JN87;
+				INFOPLIST_FILE = LastFM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.LastFM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		321343641FFA6CC100C69EA2 /* Build configuration list for PBXProject "LastFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321343791FFA6CC100C69EA2 /* Debug */,
+				3213437A1FFA6CC100C69EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3213437B1FFA6CC100C69EA2 /* Build configuration list for PBXNativeTarget "LastFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3213437C1FFA6CC100C69EA2 /* Debug */,
+				3213437D1FFA6CC100C69EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 321343611FFA6CC100C69EA2 /* Project object */;
+}
